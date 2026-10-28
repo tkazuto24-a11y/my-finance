@@ -1,5 +1,5 @@
-const CACHE='my-finance-firebase-8ffe386e1805';
-const ASSETS=["./index.html", "./firebase-config.js", "./vendor/firebase-sdk.js", "./manifest.webmanifest", "./icon.svg"];
+const CACHE='my-finance-firebase-v25-86e6e9aa3957';
+const ASSETS=["./index.html", "./firebase-config.js", "./vendor/firebase-sdk.js", "./manifest.webmanifest", "./icon.svg", "./vendor/pdf.mjs", "./vendor/pdf.worker.mjs"];
 
 const URLS=ASSETS.map(p=>new URL(p,self.location).href),APP=URLS[0],ROOT=new URL('./',self.location).href;
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(URLS)).then(()=>self.skipWaiting())));
