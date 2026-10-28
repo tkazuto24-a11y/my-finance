@@ -1,9 +1,19 @@
 {
   "name": "MY FINANCE",
   "short_name": "MY FINANCE",
-  "start_url": "./my_finance_v2_3_onedrive.html",
+  "id": "./",
+  "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
   "lang": "ja",
   "background_color": "#f6f7f9",
-  "theme_color": "#14856a"
+  "theme_color": "#14856a",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
 }
